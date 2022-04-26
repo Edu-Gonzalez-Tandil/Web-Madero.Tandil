@@ -7,6 +7,12 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    background-image:url(../img/fondomadera.jpg);
+    position: relative;
+}
+
 .container {
     max-width: 1200px;
     margin-inline: auto;
@@ -22,6 +28,15 @@ header {
     left: 0;
     right: 0;
     z-index: 99;
+}
+
+.grid-nav {
+    transition: height 2s;
+}
+
+.grid-nav a:hover {
+    color: black;
+    height: 50px;
 }
 
 .grid-nav {
@@ -117,6 +132,19 @@ footer nav a {
     text-decoration: none;
     color: white;
 }
+
+.img1 {
+    transform: rotate(3deg);
+}
+
+.img2 {
+    transform: rotate(-3deg);
+}
+
+.img3 {
+    transform: rotate(3deg);
+}
+
 
 /*ccs para quines somos*/
 
