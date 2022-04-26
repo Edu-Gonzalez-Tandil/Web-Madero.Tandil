@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'BIZ UDGothic', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: grid;
+    gap: 24px;
+    padding-bottom: 16px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.grid-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-image: linear-gradient(grey, black);
+}
+
+.grid-nav img {
+    padding: 8px 0;
+}
+
+.grid-nav a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.grid-nav a:last-child {
+    margin-bottom: 8px;
+}
+
+.grid-nav img {
+    height: 100px;
+    margin-inline: auto;
+}
+
+.seccion-titulo,
+.quienes-somosvideo,
+.section-ubicacion {
+    text-align: center;
+    margin-top: 220px;
+    padding-top: 16px;
+}
+
+.seccion-titulo{
+    color: white;
+}
+
+.carrete-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.carrete-1>div {
+    display: flex;
+    justify-content: center;
+}
+
+.carrete-1 img {
+    width: 400px;
+    height: 400px;
+}
+
+.eslogan-1{
+    display: flex;
+    padding: 30px;
+    border: 5px solid black;
+    background-image: linear-gradient(black, grey, white);
+}
+
+footer {
+    display: grid;
+    padding: 30px;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-image: linear-gradient(grey, black);
+}
+
+footer p,
+.eslogan-1 {
+    text-align: center;
+    color: white;
+}
+
+footer nav {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/*ccs para quines somos*/
+
+.quienes-somosvideo {
+    display: flex;
+    justify-content: center;
+}
+
+/*ccs para ubicacion*/
+
+.section-ubicacion iframe {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .grid-nav a:last-child {
+        margin-bottom: initial;
+    }
+
+    .grid-nav {
+        grid-template-columns: repeat(6, 1fr);
+        padding: 0 8px;
+        gap: initial;
+    }
+
+    .carrete-1 img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .carrete-1 img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .carrete-1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+
+    .seccion-titulo,
+    .quienes-somosvideo,
+    .section-ubicacion {
+        margin-top: 100px;
+    }
