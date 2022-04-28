@@ -21,13 +21,19 @@ body {
     padding-bottom: 16px;
 }
 
+.seccion-titulo{
+    font-size: x-large;
+    color: black;
+    text-align: center;
+}
+
 header {
     position: fixed;
     top: 0;
     width: 100%;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 99;    
 }
 
 .grid-nav {
@@ -67,7 +73,6 @@ header {
     margin-inline: auto;
 }
 
-.seccion-titulo,
 .quienes-somosvideo,
 .section-ubicacion {
     text-align: center;
@@ -75,8 +80,10 @@ header {
     padding-top: 16px;
 }
 
-.seccion-titulo{
-    color: white;
+.redes-footer{
+    display: grid;
+    justify-content: start;
+    flex-wrap: nowrap;
 }
 
 .carrete-1 {
@@ -99,8 +106,7 @@ header {
 .eslogan-1{
     display: flex;
     padding: 30px;
-    border: 5px solid black;
-    background-image: linear-gradient(black, grey, white);
+    border: 3px solid black;
 }
 
 .img1 {
@@ -138,11 +144,15 @@ a img:hover {
     justify-content: center;
 }
 
+.info-empresa{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
 /*ccs para ubicacion*/
 
-.section-ubicacion iframe {
-    width: 100%;
-}
+
 
 @media (min-width: 768px) {
     .grid-nav a:last-child {
@@ -180,3 +190,46 @@ a img:hover {
     form{
         padding: 200px;
     }
+
+/*css para contacto*/
+
+.formulario-contacto-fieldset {
+    width: 60%;
+    margin: 10px auto 100px;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    grid-template-areas: "label-nombre label-nombre" "nombre nombre" "label-email label-email" "email email" "label-telefono label-telefono" "telefono telefono" "label-mensaje label-mensaje" "mensaje mensaje" "none enviar";
+    gap: 10px; }
+    .formulario-contacto-fieldset .label-nombre {
+      grid-area: label-nombre; }
+    .formulario-contacto-fieldset #nombre {
+      grid-area: nombre; }
+    .formulario-contacto-fieldset .label-email {
+      grid-area: label-email; }
+    .formulario-contacto-fieldset #email {
+      grid-area: email; }
+    .formulario-contacto-fieldset .label-telefono {
+      grid-area: label-telefono; }
+    .formulario-contacto-fieldset #telefono {
+      grid-area: telefono; }
+    .formulario-contacto-fieldset .label-mensaje {
+      grid-area: label-mensaje; }
+    .formulario-contacto-fieldset label {
+      text-align: left;
+      padding-left: 10px; }
+    .formulario-contacto-fieldset #nombre, .formulario-contacto-fieldset #email, .formulario-contacto-fieldset #telefono, .formulario-contacto-fieldset #mensaje {
+      background-color: grey;
+      border-radius: 20px;
+      border: none;
+      height: 40px; }
+    .formulario-contacto-fieldset #mensaje {
+      grid-area: mensaje;
+      height: 150px; }
+    .formulario-contacto-fieldset #enviar {
+      grid-area: enviar;
+      background-color: blue;
+      width: 80px;
+      height: 40px;
+      border: none;
+      border-radius: 20px; }
