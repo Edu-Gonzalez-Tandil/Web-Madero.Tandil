@@ -6,60 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ce49404a95.js" crossorigin="anonymous"></script>
     <title>Contacto</title>
 </head>
 
 <body>
-    <header>
-        <nav class="grid-nav">
-            <img src="../img/logo.svg" alt="logo" class="contenedor-logo">
-            <a href="../index.html">INICIO</a>
-            <a href="quienes-somos.html">¿QUIENES SOMOS?</a>
-            <a href="nuestrospro.html">NUESTROS PROYECTOS</a>
-            <a href="contacto.html">CONTACTO</a>
-            <a href="ubicacion.html">UBICACION</a>
-        </nav>
-    </header>
-<section class="seccion-titulo">
-    <h1>¡PEDINOS TU PRESUPUESTO SIN CARGO!</h1>
-</section>
-    <form>
-        <fieldset>
-            <LEGENd>Formulario de contacto</LEGENd>
-            <label for="Nombre">Nombre</label>
-            <input type="nombre" placeholder="escriba aqui su nombre">
-            <label for="Apellido">Apellido</label>
-            <input type="apellido" placeholder="escriba aqui su apellido">
-            <label for="Domicilio">Domicilio</label>
-            <input type="Domicilio" placeholder="escriba aqui su domicilio">
-            <label for="Zona">Zona</label>
-            <select name="Barrio" id="">
-                <option value="Zona">La Elena</option>
-                <option value="Zona">Villa Italia</option>
-                <option value="Zona">Vela</option>
-                <option value="Zona">Gardey</option>
-            </select>
-            <label for="Telefono">Telefono</label>
-            <input type="Telefono" placeholder="escriba aqui su telefono">
-            <div> Por favor brindanos mas detalles de tu proyecto! </div>
-            <textarea name="250" id="" cols="60" rows="10">Escriba aqui</textarea>
-            <div>Estoy de acuerdo con compartir mis datos
-                <input type="checkbox" name="check">
-            </div>
-            <input type="submit" value="Enviar formulario">
-        </fieldset>
-
-        <footer>
-            <p>Bukewski 2153 - Tandil - CP 7000</p>
-            <p>Instagram: #maderotandil - Martin 2494-633520 - Miguel 2494-022145</p>
-            <nav class="footer-nav">
+    <div class="container">
+        <header>
+            <nav class="grid-nav">
+                <img src="../img/logo.svg" alt="logo" class="contenedor-logo">
                 <a href="../index.html">INICIO</a>
                 <a href="quienes-somos.html">¿QUIENES SOMOS?</a>
                 <a href="nuestrospro.html">NUESTROS PROYECTOS</a>
                 <a href="contacto.html">CONTACTO</a>
                 <a href="ubicacion.html">UBICACION</a>
             </nav>
-        </footer>
+        </header>
+        <section class="seccion-titulo">
+            <h1>¡PEDINOS TU PRESUPUESTO SIN CARGO!</h1>
+        </section>
+        
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <P>CONTACTO:</P>
+                    <P>BULEWSKI 2183</P>
+                    <p>TANDIL, CP 7000</p>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="pull-right">
+                        <h6 class="text-muted lead">ENCUENTRANOS EN LAS REDES</h6>
+                        <div class="redes-footer">
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="text-muted small text-right">
+                            <p>MARTIN 2494-575868</p>
+                            <P>MIGUEL 2494-586985</P>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     </form>
 </body>

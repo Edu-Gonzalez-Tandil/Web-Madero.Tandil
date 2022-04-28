@@ -103,36 +103,6 @@ header {
     background-image: linear-gradient(black, grey, white);
 }
 
-footer {
-    display: grid;
-    padding: 30px;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background-image: linear-gradient(grey, black);
-}
-
-footer p,
-.eslogan-1 {
-    text-align: center;
-    color: white;
-}
-
-footer nav {
-    display: flex;
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    white-space: nowrap;
-}
-
-footer nav a {
-    text-decoration: none;
-    color: white;
-}
-
 .img1 {
     transform: rotate(3deg);
 }
@@ -145,6 +115,21 @@ footer nav a {
     transform: rotate(3deg);
 }
 
+footer {
+	background-color:#1A1A1A;
+	height: 50%;
+    color: white;
+    padding: 15px;
+}
+
+.main1 { 
+  display:flex;
+  margin:0 auto;
+}
+
+a img:hover {
+    color: #fff;
+}
 
 /*ccs para quines somos*/
 
@@ -190,4 +175,8 @@ footer nav a {
     .quienes-somosvideo,
     .section-ubicacion {
         margin-top: 100px;
+    }
+
+    form{
+        padding: 200px;
     }
