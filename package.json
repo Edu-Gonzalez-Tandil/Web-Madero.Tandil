@@ -1,0 +1,24 @@
+{
+  "name": "proyecto-gonzalez.eduardo2---copia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/index.scss css/index.css","watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edu-Gonzalez-Tandil/Web-Madero.Tandil.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Edu-Gonzalez-Tandil/Web-Madero.Tandil/issues"
+  },
+  "homepage": "https://github.com/Edu-Gonzalez-Tandil/Web-Madero.Tandil#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
