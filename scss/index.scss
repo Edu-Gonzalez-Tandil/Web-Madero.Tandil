@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@700&display=swap');
+@import url(./partial/_formulario.scss);
+
+$body: red;
+
+body{
+    background-image: url(../img/fondomadera.jpg);
+    position: relative;
+}
+
+header{
+    nav{
+        display: grid;
+        justify-content: space-around;
+    }
+}
+
+div{
+    .carouselslide{
+        margin: 20px;
+    }
+}
+
+div{
+    section{
+        h1{
+            text-align: center;
+        }
+    }
+}
+
+footer{
+    display: grid;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
